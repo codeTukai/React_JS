@@ -38,6 +38,7 @@ export default function Footer() {
                                     <a
                                         href="https://github.com/codeTukai"
                                         className="hover:underline"
+                                        
                                         target="_blank"
                                         rel="noreferrer"
                                     >

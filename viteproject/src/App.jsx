@@ -1,4 +1,11 @@
 import Chai from "./chai"
+import SayHello from "./SayHello"
+
+function MyApp(){
+  return(
+    <div>hello world</div>
+  )
+}
 function App() {
 const username = "chai aur code"
 
@@ -6,8 +13,10 @@ const username = "chai aur code"
     <>
     <Chai />
     <h1>Chai aur React {username}</h1> 
-     {/* evaluated expression {} */}
+     {/* evaluated expression {} final outcome*/}
     <p>test Para</p>
+    <SayHello />
+    <MyApp />
     </>
   )
 }

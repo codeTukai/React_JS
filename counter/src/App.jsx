@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import {React, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+let [counter, setCounter] = useState(0)
+
   
-  let counter = 5
-  const addValue = (e) => {
+ 
+  const addValue = () => {
+    setCounter(counter + 1)
+    console.log(counter);
+    
+  }
+
+  const removeValue = ()=>{
+   setCounter(counter - 1)
+    
+    console.log(counter);
     
   }
   return (
@@ -17,7 +27,7 @@ function App() {
       <button onClick={addValue}>Add value: {counter} </button>
       <br></br>
       <br />
-      <button>Remove value</button>
+      <button onClick={removeValue}>Remove value: {counter}</button>
     </div>
     </>
   )

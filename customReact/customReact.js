@@ -1,3 +1,5 @@
+const mainContainer = document.querySelector('#root')
+
 function customRender(reactElement,Container) {
     /*
     const domElement = document.createElement(reactElement.type)
@@ -21,13 +23,13 @@ function customRender(reactElement,Container) {
 const reactElement = {
     type : 'a',
     props: {
-        href: 'https://google.com:',
+        href: 'https://google.com',
         target: '_blank'
     },
 
-    children: 'Click me to visit google'
+    children: 'Click me to visit google' //link text
 }
 
-const mainContainer = document.querySelector('#root')
 
-customRender(reactElement, mainContainer)
+
+customRender(reactElement, mainContainer) // call 

@@ -42,7 +42,7 @@ function App() {
           }}
           className="space-y-4"
         >
-          {/* FROM */}
+          
           <InputBox
             label="From"
             amount={amount}
@@ -52,7 +52,7 @@ function App() {
             onAmountChange={(amount) => setAmount(amount)}
           />
 
-          {/* SWAP BUTTON */}
+          
           <div className="flex justify-center">
             <button
               type="button"
@@ -63,7 +63,7 @@ function App() {
             </button>
           </div>
 
-          {/* TO */}
+       
           <InputBox
             label="To"
             amount={convertedAmount}
@@ -73,7 +73,7 @@ function App() {
             amountDisable
           />
 
-          {/* CONVERT BUTTON */}
+       
           <button
             type="submit"
             className="w-full bg-black text-white py-3 rounded-xl text-lg font-semibold hover:scale-105 transition shadow-lg"
